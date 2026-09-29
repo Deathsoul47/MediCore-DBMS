@@ -1,0 +1,7 @@
+﻿Query,Expected Output
+getGrade(85),B
+getGrade(72),C
+getGrade(91),A
+getGrade(68),D
+getGrade(78),C
+"SELECT name, marks, getGrade(marks)",Rahul B ; Aman C ; Priya A ; Neha D ; Rohit C

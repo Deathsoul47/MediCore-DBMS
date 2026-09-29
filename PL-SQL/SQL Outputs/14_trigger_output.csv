@@ -1,0 +1,4 @@
+﻿Query,Expected Output
+DELETE student_id = 2 with audit trigger,Audit row: 2 | Aman | DELETE
+BEFORE INSERT marks = 120,Inserted value is changed to 100
+BEFORE INSERT marks = -5,Inserted value is changed to 0

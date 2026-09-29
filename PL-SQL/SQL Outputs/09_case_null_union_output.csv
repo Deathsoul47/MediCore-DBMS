@@ -1,0 +1,7 @@
+﻿Query,Expected Output
+CASE grades,Rahul B ; Aman C ; Priya A ; Neha D ; Rohit C
+IS NULL,Rows where city is NULL
+IS NOT NULL,All 5 original rows because city is populated
+COALESCE,Existing city remains unchanged; NULL becomes Unknown
+UNION,Combined unique values
+UNION ALL,Combined values including duplicates

@@ -1,0 +1,5 @@
+﻿Query,Expected Output
+Highest marks subquery,Priya | 91
+Above average subquery,Rahul | 85 ; Priya | 91
+IN subquery,Cities containing students with marks > 80
+Correlated subquery,Students above their own city's average

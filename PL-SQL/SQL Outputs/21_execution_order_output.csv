@@ -1,0 +1,2 @@
+﻿Conceptual order,FROM -> JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> DISTINCT -> ORDER BY -> LIMIT
+Example query,Top 3 cities by average marks after filtering marks > 50 and average > 70

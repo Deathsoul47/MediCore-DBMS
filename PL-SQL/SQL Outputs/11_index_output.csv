@@ -1,0 +1,5 @@
+﻿Query,Expected Output
+CREATE INDEX idx_student_name,Index created
+CREATE INDEX idx_student_city,Index created
+SHOW INDEX,Index metadata displayed
+DROP INDEX idx_student_name,Index removed

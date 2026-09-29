@@ -1,0 +1,7 @@
+﻿Query,Expected Output
+WHERE marks > 80,Priya | 91
+age >= 20 AND marks > 75,Rahul | 85 ; Priya | 91 ; Rohit | 78
+"city IN (Delhi,Bhopal,Lucknow)",Rahul | Delhi ; Aman | Bhopal ; Neha | Delhi ; Rohit | Lucknow
+marks BETWEEN 70 AND 85,Rahul | 85 ; Aman | 72 ; Rohit | 78
+name LIKE 'R%',Rahul ; Rohit
+name LIKE '%a',Priya ; Neha
