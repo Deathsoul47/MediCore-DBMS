@@ -1,0 +1,41 @@
+SQL PART 1 — DATABASE & TABLE SETUP
+====================================
+
+1. Create database
+
+CREATE DATABASE college_db;
+USE college_db;
+
+2. Create students table
+
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    gender VARCHAR(10),
+    city VARCHAR(50),
+    marks INT
+);
+
+3. Insert sample data
+
+INSERT INTO students
+(student_id, name, age, gender, city, marks)
+VALUES
+(1, 'Rahul', 20, 'Male', 'Delhi', 85),
+(2, 'Aman', 21, 'Male', 'Bhopal', 72),
+(3, 'Priya', 20, 'Female', 'Indore', 91),
+(4, 'Neha', 22, 'Female', 'Delhi', 68),
+(5, 'Rohit', 21, 'Male', 'Lucknow', 78);
+
+4. View data
+
+SELECT * FROM students;
+
+EXPECTED OUTPUT
+---------------
+1 Rahul 20 Male Delhi 85
+2 Aman 21 Male Bhopal 72
+3 Priya 20 Female Indore 91
+4 Neha 22 Female Delhi 68
+5 Rohit 21 Male Lucknow 78

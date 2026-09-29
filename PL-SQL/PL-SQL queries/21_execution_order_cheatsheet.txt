@@ -1,0 +1,43 @@
+SQL PART 21 — EXECUTION ORDER & CHEAT SHEET
+=============================================
+
+Conceptual SQL execution order:
+
+1. FROM
+2. JOIN
+3. WHERE
+4. GROUP BY
+5. HAVING
+6. SELECT
+7. DISTINCT
+8. ORDER BY
+9. LIMIT
+
+Example:
+
+SELECT city, AVG(marks)
+FROM students
+WHERE marks > 50
+GROUP BY city
+HAVING AVG(marks) > 70
+ORDER BY AVG(marks) DESC
+LIMIT 3;
+
+QUICK CHEAT SHEET:
+
+SELECT       -> read data
+WHERE        -> filter rows
+GROUP BY     -> create groups
+HAVING       -> filter groups
+ORDER BY     -> sort
+LIMIT        -> restrict rows
+JOIN         -> combine tables
+SUBQUERY     -> query inside query
+VIEW         -> virtual table
+INDEX        -> faster lookup
+PROCEDURE    -> saved SQL program
+FUNCTION     -> returns a value
+TRIGGER      -> automatic event-based SQL
+TRANSACTION  -> COMMIT / ROLLBACK
+CTE          -> temporary named query
+WINDOW       -> calculations across rows

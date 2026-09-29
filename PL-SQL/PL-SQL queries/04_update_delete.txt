@@ -1,0 +1,40 @@
+SQL PART 4 — UPDATE & DELETE
+============================
+
+UPDATE one row:
+
+UPDATE students
+SET marks = 90
+WHERE student_id = 1;
+
+SELECT name, marks
+FROM students
+WHERE student_id = 1;
+
+OUTPUT:
+Rahul 90
+
+UPDATE multiple columns:
+
+UPDATE students
+SET age = 21,
+    city = 'Mumbai'
+WHERE student_id = 1;
+
+DELETE one row:
+
+DELETE FROM students
+WHERE student_id = 5;
+
+IMPORTANT:
+Always use WHERE carefully with UPDATE and DELETE.
+
+Dangerous:
+UPDATE students SET marks = 100;
+
+This changes EVERY row.
+
+Dangerous:
+DELETE FROM students;
+
+This deletes EVERY row.

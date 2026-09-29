@@ -1,0 +1,95 @@
+SQL PART 7 — JOINS
+===================
+
+Joins combine data from multiple tables.
+
+Tables:
+
+departments
+-----------
+1 CSE
+2 ECE
+3 Mechanical
+
+students3
+---------
+1 Rahul 1
+2 Aman 1
+3 Priya 2
+
+1. INNER JOIN
+
+SELECT
+    s.name,
+    d.department_name
+FROM students3 AS s
+INNER JOIN departments AS d
+ON s.department_id = d.department_id;
+
+OUTPUT:
+Rahul CSE
+Aman CSE
+Priya ECE
+
+2. LEFT JOIN
+
+SELECT
+    s.name,
+    d.department_name
+FROM students3 AS s
+LEFT JOIN departments AS d
+ON s.department_id = d.department_id;
+
+All rows from the LEFT table are preserved.
+
+3. RIGHT JOIN
+
+SELECT
+    s.name,
+    d.department_name
+FROM students3 AS s
+RIGHT JOIN departments AS d
+ON s.department_id = d.department_id;
+
+All rows from the RIGHT table are preserved.
+
+4. FULL OUTER JOIN
+
+MySQL does not directly support FULL OUTER JOIN.
+
+Use UNION:
+
+SELECT *
+FROM students3 s
+LEFT JOIN departments d
+ON s.department_id = d.department_id
+
+UNION
+
+SELECT *
+FROM students3 s
+RIGHT JOIN departments d
+ON s.department_id = d.department_id;
+
+5. SELF JOIN example
+
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(50),
+    manager_id INT
+);
+
+SELECT
+    e.employee_name AS employee,
+    m.employee_name AS manager
+FROM employees e
+LEFT JOIN employees m
+ON e.manager_id = m.employee_id;
+
+JOIN TYPES TO REMEMBER:
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+SELF JOIN
+FULL OUTER JOIN concept
+CROSS JOIN

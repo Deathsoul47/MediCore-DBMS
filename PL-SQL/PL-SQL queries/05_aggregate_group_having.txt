@@ -1,0 +1,58 @@
+SQL PART 5 — AGGREGATE FUNCTIONS, GROUP BY & HAVING
+====================================================
+
+Functions:
+
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
+
+COUNT:
+
+SELECT COUNT(*) AS total_students
+FROM students;
+
+MAX:
+
+SELECT MAX(marks) AS highest_marks
+FROM students;
+
+MIN:
+
+SELECT MIN(marks) AS lowest_marks
+FROM students;
+
+AVG:
+
+SELECT AVG(marks) AS average_marks
+FROM students;
+
+SUM:
+
+SELECT SUM(marks) AS total_marks
+FROM students;
+
+GROUP BY city:
+
+SELECT city, COUNT(*) AS total_students
+FROM students
+GROUP BY city;
+
+CITY-WISE AVERAGE:
+
+SELECT city, AVG(marks) AS average_marks
+FROM students
+GROUP BY city;
+
+HAVING:
+
+SELECT city, AVG(marks) AS average_marks
+FROM students
+GROUP BY city
+HAVING AVG(marks) > 75;
+
+IMPORTANT:
+WHERE filters rows.
+HAVING filters groups.

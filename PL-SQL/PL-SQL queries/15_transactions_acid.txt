@@ -1,0 +1,55 @@
+SQL PART 15 — TRANSACTIONS & ACID
+=================================
+
+Transaction groups SQL operations into one logical unit.
+
+1. COMMIT:
+
+START TRANSACTION;
+
+UPDATE students
+SET marks = marks + 5
+WHERE student_id = 1;
+
+UPDATE students
+SET marks = marks - 5
+WHERE student_id = 2;
+
+COMMIT;
+
+Changes are permanently saved.
+
+2. ROLLBACK:
+
+START TRANSACTION;
+
+UPDATE students
+SET marks = 0;
+
+ROLLBACK;
+
+The update is cancelled.
+
+ACID:
+A — Atomicity
+C — Consistency
+I — Isolation
+D — Durability
+
+SAVEPOINT:
+
+START TRANSACTION;
+
+UPDATE students SET marks = marks + 5
+WHERE student_id = 1;
+
+SAVEPOINT point1;
+
+UPDATE students SET marks = 0
+WHERE student_id = 2;
+
+ROLLBACK TO point1;
+
+COMMIT;
+
+Only the second update is rolled back.

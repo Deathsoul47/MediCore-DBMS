@@ -1,0 +1,45 @@
+SQL PART 16 — CTE
+===================
+
+CTE = Common Table Expression.
+
+Syntax:
+
+WITH name AS (
+    SELECT ...
+)
+SELECT ...
+FROM name;
+
+Example:
+
+WITH high_marks AS (
+    SELECT *
+    FROM students
+    WHERE marks > 80
+)
+SELECT *
+FROM high_marks;
+
+OUTPUT:
+Rahul 85
+Priya 91
+
+Multiple CTEs:
+
+WITH student_avg AS (
+    SELECT AVG(marks) AS avg_marks
+    FROM students
+),
+high_students AS (
+    SELECT *
+    FROM students
+    WHERE marks > (
+        SELECT avg_marks
+        FROM student_avg
+    )
+)
+SELECT *
+FROM high_students;
+
+CTEs make complex queries easier to read and maintain.

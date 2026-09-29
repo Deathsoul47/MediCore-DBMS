@@ -1,0 +1,43 @@
+SQL PART 10 — VIEWS
+====================
+
+A VIEW is a virtual table based on a saved query.
+
+1. Create view:
+
+CREATE VIEW student_details AS
+SELECT
+    student_id,
+    name,
+    city,
+    marks
+FROM students;
+
+2. Use view:
+
+SELECT *
+FROM student_details;
+
+3. Toppers view:
+
+CREATE VIEW toppers AS
+SELECT *
+FROM students
+WHERE marks >= 80;
+
+SELECT *
+FROM toppers;
+
+OUTPUT:
+Rahul 85
+Priya 91
+
+4. Drop view:
+
+DROP VIEW toppers;
+
+Views are useful for:
+- Reusing queries
+- Hiding unnecessary columns
+- Simplifying complex queries
+- Controlling access to data

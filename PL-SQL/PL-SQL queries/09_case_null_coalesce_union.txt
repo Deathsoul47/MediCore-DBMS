@@ -1,0 +1,61 @@
+SQL PART 9 — CASE, NULL, COALESCE & UNION
+===========================================
+
+1. CASE:
+
+SELECT
+    name,
+    marks,
+    CASE
+        WHEN marks >= 90 THEN 'A'
+        WHEN marks >= 80 THEN 'B'
+        WHEN marks >= 70 THEN 'C'
+        WHEN marks >= 60 THEN 'D'
+        ELSE 'F'
+    END AS grade
+FROM students;
+
+OUTPUT:
+Rahul 85 B
+Aman 72 C
+Priya 91 A
+Neha 68 D
+Rohit 78 C
+
+2. NULL:
+
+SELECT *
+FROM students
+WHERE city IS NULL;
+
+Do NOT use:
+WHERE city = NULL;
+
+3. IS NOT NULL:
+
+SELECT *
+FROM students
+WHERE city IS NOT NULL;
+
+4. COALESCE:
+
+SELECT
+    name,
+    COALESCE(city, 'Unknown') AS city
+FROM students;
+
+5. UNION:
+
+SELECT city FROM students
+UNION
+SELECT department_name FROM departments;
+
+UNION removes duplicates.
+
+6. UNION ALL:
+
+SELECT city FROM students
+UNION ALL
+SELECT department_name FROM departments;
+
+UNION ALL keeps duplicates.
