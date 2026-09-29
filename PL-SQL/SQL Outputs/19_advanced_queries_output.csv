@@ -1,8 +1,0 @@
-﻿Query,Expected Output
-Top 2 per city,"Delhi: Rahul 85, Neha 68 ; Bhopal: Aman 72 ; Indore: Priya 91 ; Lucknow: Rohit 78"
-Second highest marks,85
-Third distinct highest marks,78
-Duplicate cities,Delhi | 2
-EXISTS,Matching students found in students3
-NOT EXISTS,Departments without students: Mechanical
-Conditional aggregation,total_students = 5 ; above_80 = 2

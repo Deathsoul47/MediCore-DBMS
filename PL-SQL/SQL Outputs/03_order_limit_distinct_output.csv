@@ -1,4 +1,0 @@
-﻿Query,Expected Output
-ORDER BY marks DESC,Priya 91 ; Rahul 85 ; Rohit 78 ; Aman 72 ; Neha 68
-LIMIT 3,Priya 91 ; Rahul 85 ; Rohit 78
-DISTINCT city,Delhi ; Bhopal ; Indore ; Lucknow

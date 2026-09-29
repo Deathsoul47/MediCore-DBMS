@@ -1,6 +1,0 @@
-﻿Query,Expected Output
-INNER JOIN,Rahul-CSE ; Aman-CSE ; Priya-ECE
-LEFT JOIN,Rahul-CSE ; Aman-CSE ; Priya-ECE
-RIGHT JOIN,Rahul-CSE ; Aman-CSE ; Priya-ECE ; NULL-Mechanical
-FULL OUTER JOIN concept,All matching rows plus unmatched rows from both tables
-CROSS JOIN,3 students x 3 departments = 9 combinations

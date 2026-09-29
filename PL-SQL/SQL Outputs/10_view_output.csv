@@ -1,4 +1,0 @@
-﻿Query,Expected Output
-student_details view,Same columns/rows selected by the view
-toppers view,Rahul | 85 ; Priya | 91
-DROP VIEW,View removed successfully

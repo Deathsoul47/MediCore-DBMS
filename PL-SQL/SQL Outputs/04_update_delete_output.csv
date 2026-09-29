@@ -1,3 +1,0 @@
-﻿Query,Expected Output
-UPDATE Rahul marks = 90,Rahul | 90
-DELETE student_id = 5,Rohit row removed

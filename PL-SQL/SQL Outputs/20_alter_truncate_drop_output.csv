@@ -1,8 +1,0 @@
-﻿Query,Expected Output
-ADD COLUMN,email column added
-MODIFY COLUMN,name column changed
-RENAME COLUMN,name renamed to student_name
-DROP COLUMN,email removed
-DELETE,Selected rows removed
-TRUNCATE,"All rows removed, table remains"
-DROP TABLE,Table removed

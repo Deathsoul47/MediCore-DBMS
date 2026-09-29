@@ -1,4 +1,0 @@
-﻿Query,Expected Output
-students2 with valid row,Row inserted successfully
-Foreign key valid values,Rahul-CSE ; Aman-CSE ; Priya-ECE
-Foreign key invalid department_id = 10,ERROR: foreign key constraint violation

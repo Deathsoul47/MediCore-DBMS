@@ -1,9 +1,0 @@
-﻿Query,Expected Output
-COUNT(*),5
-MAX(marks),91
-MIN(marks),68
-AVG(marks),78.8000
-SUM(marks),394
-GROUP BY city COUNT,Delhi 2 ; Bhopal 1 ; Indore 1 ; Lucknow 1
-GROUP BY city AVG,Delhi 76.5000 ; Bhopal 72.0000 ; Indore 91.0000 ; Lucknow 78.0000
-HAVING AVG(marks) > 75,Delhi 76.5000 ; Indore 91.0000 ; Lucknow 78.0000

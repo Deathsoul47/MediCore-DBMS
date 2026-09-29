@@ -1,3 +1,0 @@
-﻿Query,Expected Output
-CALL getStudents(),All student rows
-CALL getStudentById(2),Aman | 21 | Male | Bhopal | 72

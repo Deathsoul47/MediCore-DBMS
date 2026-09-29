@@ -1,4 +1,0 @@
-﻿Query,Expected Output
-COMMIT,Changes permanently saved
-ROLLBACK,Changes cancelled
-SAVEPOINT + ROLLBACK TO,Only changes after savepoint are rolled back
